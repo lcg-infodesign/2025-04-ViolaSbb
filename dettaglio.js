@@ -63,7 +63,7 @@ function setup() {
          let maxGlobal = max(globalValues);
 
          //dimensioni limite della circonferenza
-         let maxRadius = 800;
+         let maxRadius = 700;
          let minRadius = 50;
 
          //colori 
