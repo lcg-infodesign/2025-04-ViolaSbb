@@ -1,0 +1,128 @@
+canvas {
+  display: block;
+}
+#sketch{
+  margin: 0 auto 3em;
+  padding: 0;
+}
+body {
+  margin: 3em;
+  background-color: rgb(12, 12, 23);
+  color: azure;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+p{
+  max-width: 60vw;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2{
+  font-size: large;
+  font-weight: 500;
+  text-decoration: underline;
+  padding-bottom: 0;
+  margin: 0 auto 0.5em;
+}
+
+.legenda {
+  background-color: rgba(5, 4, 80, 0.6);
+  padding: 1.5em 2em;
+  border-radius: 0.8em;
+  max-width: fit-content;
+  margin: 2em 0 3em 0;
+}
+
+.contenutilegenda {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 3em;
+}
+
+.dots {
+  display: flex;
+  flex-direction: column;
+  gap: auto;
+}
+
+.nomicolori {
+  display: flex;
+  align-items: center;
+  font-size: small;
+  gap: 0.5em;
+}
+
+.colordot {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+
+h3{
+  font-size: 0.9em;
+  margin: 0.5em 0 0.8em 0;
+  text-align: left;
+}
+
+.dots p{
+  margin: 0.3em;
+  font-size: small;
+  text-align: left;
+  font-style: italic;
+}
+
+#red { background-color: rgb(255, 80, 80); }
+#orange { background-color: rgb(255, 160, 80); }
+#yellow { background-color: rgb(255, 255, 100); }
+#yellow-white { background-color: rgb(252, 243, 173); }
+#white { background-color: rgb(255, 255, 255); }
+#blue-white { background-color: rgb(180, 200, 255); }
+#blue { background-color: rgb(100, 150, 255); }
+
+#raggio{
+  width: 2.8em;
+  height: 2.8em;
+  border-radius: 50%;
+  border: 3px rgb(5, 4, 130) solid;
+  margin-bottom: 0.5em;
+}
+#magnitudine{
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: aliceblue;
+  opacity: 0.5;
+  margin-bottom: 0.5em;
+}
+
+#infobox {
+  position: absolute;
+  background-color: rgb(5, 4, 80, 0.6);
+  font-size: small;
+  line-height: 1.8em;
+  padding: 1em 2em;
+  min-width: fit-content;
+  max-width: 15vw;
+  border-radius: 0.8em;
+  opacity: 0; /*così è nascosto di base*/
+  z-index: 1;
+}
+
+footer {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding: 3em;
+  line-height: 1.8em;
+}
+
+#sketch {
+  display: block;
+  position: relative;
+  align-content: center;
+}

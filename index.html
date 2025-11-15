@@ -2,17 +2,104 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Sketch</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
 
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
   </head>
 
   <body>
-    <script src="sketch.js"></script>
+    <header>
+      <h1>Mappare le stelle</h1>
+      <p>Assignment 4 - una visione di dettaglio</p>
+    </header>
+
+    <div class="legenda">
+      <h2>Legenda delle stelle</h2>
+
+      <div class="contenutilegenda">
+        <div class="dots">
+          <h3>Colore</h3>
+          <div class="nomicolori">
+            <span class="colordot" id="red"></span>
+            <p>Rossa</p>
+          </div>
+          <div class="nomicolori">
+            <span class="colordot" id="orange"></span>
+            <p>Arancione</p>
+          </div>
+          <div class="nomicolori">
+            <span class="colordot" id="yellow"></span>
+            <p>Gialla</p>
+          </div>
+          <div class="nomicolori">
+            <span class="colordot" id="yellow-white"></span>
+            <p>Gialla-bianca</p>
+          </div>
+          <div class="nomicolori">
+            <span class="colordot" id="white"></span>
+            <p>Bianca</p>
+          </div>
+          <div class="nomicolori">
+            <span class="colordot" id="blue-white"></span>
+            <p>Blu-bianca</p>
+          </div>
+          <div class="nomicolori">
+            <span class="colordot" id="blue"></span>
+            <p>Blu</p>
+          </div>
+        </div>
+        <div class="dots">
+          <h3>Raggio</h3>
+          <div class="nomicolori">
+            <span class="colordot" id="raggio"></span>
+          </div>
+          <p><i>relativo al raggio solare</i></p>
+        </div>
+        <div class="dots">
+          <h3>Magnitudine assoluta</h3>
+          <div class="nomicolori">
+            <span class="colordot" id="magnitudine"></span>
+          </div>
+          <p>
+            <i
+              >luminosità reale osservata <br />se la stella fosse a 10pc dalla
+              Terra</i
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="infobox">
+      <p>
+        <b><span id="tipo"></span>, spettro <span id="spettro"></span></b>
+        <br /><i>Temperatura</i>: <span id="temp"></span> K<br />
+        <i>Luminosità</i>: <span id="lum"></span> L☉<br />
+        <i>Raggio</i>: <span id="rag"></span> R☉<br />
+        <i>Magnitudine assoluta</i>: <span id="magA"></span><br />
+      </p>
+    </div>
+    <div id="sketch"></div>
+    <p class="legenda">
+      <b><i>A proposito di colore e classe spettrale...</i></b
+      ><br />
+      La classe spettrale indica la temperatura superficiale della stella e
+      determina il suo colore apparente: <br>le stelle di classe <b>O</b> sono molto
+      calde e blu, <b>B</b> blu-bianco, <b>A</b> bianche,
+      <b>F</b> giallo-bianche, <b>G</b> gialle (come il Sole),
+      <b>K</b> arancioni e <b>M</b> rosse.
+    </p>
+    <footer>
+      <hr class="linea" />
+      Dati ricavati da <a target="_blank" href="https://www.kaggle.com/datasets/brsdincer/star-type-classification/data" />Kaggle</a>
+      <br>Viola Sabbatini - Information Design - 2025
+    </footer>
+
+    <script src="sketchStars.js"></script>
   </body>
 </html>
