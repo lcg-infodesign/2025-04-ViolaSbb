@@ -19,18 +19,71 @@
       <a href="index.html"><i>← Indietro</i></a>
     </header>
 
-    <div class="legenda">
-    <div id="sketchDettaglio"></div>
-    <div>contenuti descrittivi</div>
+    <div class="orizzontale">
+      <div class="verticale" id="sketchDettaglio"></div>
+      <div class="verticale">
+        <div class="legenda">
+          <h2><span id="tipo"></span>, spettro <span id="spettro"></span></h2>
+          <div class="orizzontale">
+            <div class="verticale">
+              <h3>Raggio</h3>
+              <span class="colordot" id="raggioB"></span>
+              <p><span id="rag"></span> R☉<br /></p>
+            </div>
+            <div class="verticale">
+              <h3>Luminosità</h3>
+              <span class="colordot" id="luminosità"></span>
+              <p><span id="lum"></span> L☉<br /></p>
+            </div>
+          </div>
+          <p>
+            Temperatura: <span id="temp"></span> K
+            <br>Magnitudine assoluta: <span id="magA"></span>
+          </p>
+        </div>
+
+        <div class="legenda">
+          <h2>Sole, spettro G</h2>
+          <div class="orizzontale">
+            <div class="verticale">
+              <h3>Raggio</h3>
+              <span class="colordot" id="raggioSole"></span>
+              <p>1 R☉<br /></p>
+            </div>
+            <div class="verticale">
+              <h3>Luminosità</h3>
+              <span class="colordot" id="lumSole"></span>
+              <p>1 L☉<br /></p>
+            </div>
+          </div>
+          <p class="verticale">
+            Temperatura: 5.780 K<br />
+            Magnitudine assoluta: 4.83<br />
+          </p>
+        </div>
+      </div>
     </div>
+    <p class="legenda">
+      <b><i>A proposito di colore e classe spettrale...</i></b
+      ><br />
+      La classe spettrale indica la temperatura superficiale della stella e
+      determina il suo colore apparente: <br />le stelle di classe <b>O</b> sono
+      molto calde e blu, <b>B</b> blu-bianco, <b>A</b> bianche,
+      <b>F</b> giallo-bianche, <b>G</b> gialle (come il Sole),
+      <b>K</b> arancioni e <b>M</b> rosse.
+    </p>
 
     <footer>
-         <hr class="linea" />
-         Dati ricavati da <a target="_blank" href="https://www.kaggle.com/datasets/brsdincer/star-type-classification/data" />Kaggle</a>
-         <br>Viola Sabbatini - Information Design - 2025
+      <hr class="linea" />
+      Dati ricavati da
+      <a
+        target="_blank"
+        href="https://www.kaggle.com/datasets/brsdincer/star-type-classification/data"
+        >Kaggle</a
+      >
+      <br />Viola Sabbatini - Information Design - 2025
     </footer>
 
-         <script src="dettaglio.js"></script>
+    <script src="dettaglio.js"></script>
   </body>
 </html>
- 
